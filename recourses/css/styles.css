@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    letter-spacing: .5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.createUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    width: 22rem;
+    gap: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #363c3c;
+}
+
+.createUser form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-sizing: border-box;
+}
+
+.createUser form div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.createUser form span{
+    font-weight:600;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(253, 84, 84);
+}
+
+input {
+    box-sizing: border-box;
+    border: none;
+    padding: 1rem;
+    background: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: all .1s ease;
+    border: 1px solid rgba(77, 178, 218, 0.995);
+    color: white;
+}
+
+input:hover {
+    box-shadow: 0 0 0 5px rgba(0, 155, 216, 0.403);
+}
+
+input:focus {
+    box-shadow: 0 0 0 5px rgba(0, 155, 216, 0.403);
+}
+
+button[type="submit"] {
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+
+#editContenetor{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.434);
+    backdrop-filter: blur(4px);
+}
+
+#editContenetor div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #363c3c;
+}
+
+#editContenetor form{
+
+}
+
+#editContenetor div h2{
+    color: white;
+}
+
+#editContenetor .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#editContenetor .buttons button[type="submit"]{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+
+#editContenetor .buttons button[type="button"]{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(211, 53, 53);
+}
+
+.mainTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #363c3c;
+}
+
+.table, th, td {
+    padding: .5rem;
+    text-align: center;
+    color: rgb(234, 234, 234);
+    border-collapse: collapse;
+    border: 2px solid rgb(146, 146, 146);
+}
+
+.table .action{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(146, 146, 146);
+}
+
+.table #edit{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: .5rem;
+    border-radius: 4px;
+    background-color: rgb(0, 132, 255);
+    cursor: pointer;
+}
+
+.table #delete{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: .5rem;
+    border-radius: 4px;
+    background-color: rgb(242, 63, 63);
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/recourses/css/styles.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <section class="createUser">
+        <h1>CRUD</h1>
+        <form id="createform">
+            <div>
+                <input id="username" type="text" placeholder="Username" required>
+                <span id="errorUsername">Error, El usuario ya esta registrado</span>
+            </div>
+            <div>
+                <input id="email" type="email" placeholder="Email" required>
+                <span id="errorEmail">Error, El email ya esta registrado</span>
+            </div>
+            <div>
+                <input id="password" type="password" placeholder="Password" required>
+                <span id="errorPassword">Error, La contraseña debe tener mas de 8 caracteres, ademas de una letra Mayuscula, una minuscula y un numero</span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <main class="mainTable">
+        <table class="table">
+            <tbody id="tableBody">
+                <!-- header -->
+                <tr>
+                    <th>Id</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <section class="editUser" id="editContenetor">
+        <div>
+            <h2>Edit Info</h2>
+            <form id="editform">
+                <div>
+                    <input id="usernameEdit" type="text" placeholder="Username" required>
+                </div>
+                <div>
+                    <input id="emailEdit" type="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input id="passwordEdit" type="password" placeholder="Password" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="updateInfo">Actualizar</button>
+                    <button type="button" id="cancelEdit">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./recourses/js/script.js"></script>
+</body>
+
+</html>
