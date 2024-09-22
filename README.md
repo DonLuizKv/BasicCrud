@@ -13,7 +13,7 @@
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/yourusername/basic-crud.git
+   git clone https://github.com/yourusername/basicCrud.git
    ```
    
 2. Ir al directorio del proyecto:
